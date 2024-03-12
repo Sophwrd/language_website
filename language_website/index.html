@@ -2,107 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Language Learning Website</title>
 </head>
 <body>
     <nav>
         <ul>
             <img src="lang.png" alt="">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Languages</a>
-            <ul class="dropdown">
-                <li><a href="">Chinese</a></li>
-                <li><a href="">Dutch</a></li>
-                <li><a href="">English</a></li>
-                <li><a href="">French</a></li>
-                <li><a href="">Korean</a></li>
-                <li><a href="">Swahili</a></li>
-                <li><a href="">Urdu</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Languages</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#testimonial">Testimonials and FAQ</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="login.html">Login</a> </li>
+            <button class="btn" type="submit" >Search</button>
+            <input class="form-control" type="search" placeholder="Search" >
         </ul>
+        
     </nav>
 
-    <br><br>
-    <h2><div>Welcome to Language School</div><br><br> Where We Regroup High Quality Resources to Get You Started in Your Language Learning Journey</h2><br><br>
+                                <!-- story section -->
 
-<!-- About us -->
-    <div class="about_us"><h3>About us</h3></div>
-    <div class="about_us2">Welcome to our page and project: Language School <br><br>We are four working on this project and the aim is to create a website dedicated to language learning.
-    <br>Here you will find useful online resources to learn the following languages: <br> Chinese, Dutch, English, French, Korean, Swahili and Urdu.
-    <br><br>We decided to create this project because language learning is incredibly useful <br> and many people
-    are always trying to learn new languages. So why not create <br>a website regrouping all the best resources to help you get started?<br><br>We hope you find this website useful! :)</div>
-    
-    <br><br><br><br>
+ <div class="container"> 
+    <section id="Languages" class="cover-section">
+        <div class="text">
+            <h1>Language School</h1>
+            <p>"Welcome to Language School.
+                Where We Regroup High Quality Resources to Get You Started in Your Language Learning Journey."
+                </p>
+               </div>
+               <div class="box-image">
+                <img class="cover-img" src="2.jpg" alt="" id="img1">
+                
+               </div>
 
+    </section>
+</div>
+<br>
+
+                                              <!-- About section -->
+
+<div  style="background: radial-gradient(circle, rgba(238,174,202,0.8044467787114846) 0%, rgba(148,187,233,1) 100%);">
+    <h1 style="text-align: center; color: #ffffff;font-weight: lighter;" id="about">About Us</h1>
+    <section style="margin: 0; padding: 0;">  
+    <p  style="text-align: center; font-style: italic; color: #ffffff; width: 50%; font-size: 25px; display: inline;"> 
+        Welcome to our page and project: Language School!
+        We are Four members working on this project. <br>And the aim is to create a website to gave free videos to our users.        
+        We decided to create this project because language learning is incredibly useful
+        and many people are always trying to learn new languages. So why not create
+        a website regrouping all the best resources to help you get started? <br>
+        Here you will find useful online resources to learn the following languages: <br>
+        Chinese, Dutch, English, French, Korean, Swahili and Urdu.
+
+        
+        We hope you find this website useful! :)
+        </p>
+        <img  style="display: flex ; float:right; width: 50%; height: 400px;padding-right: 25px; padding-left: 25px;"src="3.webp" alt="" >
+    </section>
+</div>
+
+<br><br>
 <!-- Most popular languages -->
 <!-- Click on photo -->
-    <h3>Our Most Popular Languages</h3>
-    <p class="p_popularlanguages">To get started with the best online resources, click on your chosen language</p>
-    <div class="row">
-        <div class="column">
-            <a href="#"><img src="https://www.autigrevanille.ch/wp-content/uploads/2020/07/shanghai-moderne-futuriste-skyline-chine.jpg" alt="Shanghai" style="width:100%; height: 100%;"></a>
-            <p>Learn Chinese</p>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://a.cdn-hotels.com/gdcs/production101/d1159/354bc7dd-bda4-4383-a36b-4ef2f21c269b.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Netherlands" style="width:100%; height: 100%;"></a>
-            <p>Learn Dutch</p>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/62/e62eb1d8-c913-5c0b-86f1-030bc4bd741a/63da7fb18577d.image.jpg?resize=1200%2C800" alt="London" style="width:100%; height: 100%;"></a>
-            <p>Learn English</p>
-        </div>
+<div class="row">
+    <div class="column">
+        <a href="index2.html"><img src="https://www.autigrevanille.ch/wp-content/uploads/2020/07/shanghai-moderne-futuriste-skyline-chine.jpg" alt="Shanghai" style="width:100%; height: 100%;"></a>
+        <p>Learn Chinese</p>
     </div>
-
-    <br><br><br><br>
-
-    <div class="row">
-        <div class="column">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/800px-Flag_of_the_People%27s_Republic_of_China.svg.png" alt="China" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt="Netherlands" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://media.istockphoto.com/id/479199262/photo/full-frame-image-of-england-flag.jpg?s=612x612&w=0&k=20&c=fNTLG237c4S3k64IDUAq5LlK8Q0knEYtrpYJA7Akm8A=" alt="London" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/800px-Flag_of_France.svg.png" alt="London" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://www.flagpoleworld.com.au/cdn/shop/products/Korea_South.jpg?v=1557115436" alt="London" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://cdn.britannica.com/15/15-004-B5D6BF80/Flag-Kenya.jpg" alt="London" style="width:50%; height: 100%;"></a>
-        </div>
-        <div class="column">
-            <a href="#"><img src="https://cdn.britannica.com/46/3346-004-D3BDE016/flag-symbolism-Pakistan-design-Islamic.jpg" alt="London" style="width:50%; height: 100%;"></a>
-        </div>
+    <div class="column">
+        <a href="index2.html"><img src="https://a.cdn-hotels.com/gdcs/production101/d1159/354bc7dd-bda4-4383-a36b-4ef2f21c269b.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Netherlands" style="width:100%; height: 100%;"></a>
+        <p>Learn Dutch</p>
     </div>
-
-    <br><br><br><br><br><br>
-
-<!-- Testimonials -->
-    <h3 class="testimonials">Testimonials</h3>
-    <p class="p_popularlanguages2">What our learners say about us</p>
-    <div class="parent">
-        <div class="child">⭐️⭐️⭐️⭐️⭐️<br><br>"I've been wanting to learn Swahili for ages<br>and this website helped me find 
-        useful <br> resources to get me started on my language <br> journey!"<br><br>- Rose</div>
-        <div class="child">⭐️⭐️⭐️⭐️⭐️ <br><br>"My fiancé is Korean and I wanted to surprise <br>them for their birthday by learning some<br>
-            phrases. I can now string small sentences <br> together which is amazing." <br><br>- Aleixo</div>
+    <div class="column">
+        <a href="index2.html"><img src="https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/62/e62eb1d8-c913-5c0b-86f1-030bc4bd741a/63da7fb18577d.image.jpg?resize=1200%2C800" alt="London" style="width:100%; height: 100%;"></a>
+        <p>Learn English</p>
     </div>
+</div>
 
-    <br><br><br>
+<br><br>
+     
+     <br>
+         <!-- testimonial -->
+        
+        <div style="margin-top: 2px; background-color: #F5F4F0;">
+          <h3  id="testimonial"class="p_popularlanguages2">What our learners say about us</h3>
+                 <div class="parent">
+                    <div class="child">⭐️⭐️⭐️⭐️⭐️<br><br>"I've been wanting to learn Swahili for ages<br>and this website helped me find 
+                 useful <br> resources to get me started on my language <br> journey!"<br><br>- Rose</div>
+                 <div class="child">⭐️⭐️⭐️⭐️⭐️<br><br>"The easy access to fun, engaging videos <br>has made language learning very enjoyable and
+                    <br> effective. I've noticed significant progress! <br> Highly Recommend!"<br><br>- Louise</div>
+                 <div class="child">⭐️⭐️⭐️⭐️⭐️ <br><br>"My fiancé is Korean and I wanted to surprise <br>them for their birthday by learning some<br>
+                    phrases. I can now string small sentences <br> together which is amazing." <br><br>- Aleixo</div>
+                </div>
+        
+        <!-- contact us -->   
 
-<!-- FAQ section -->
-    <div class="div_faq">
+        <!-- FAQ section -->
+    
         <h3 class="faq">FAQ</h3>
         <p class="p_popularlanguages2">If you do not find the answers to your questions <br>Please do not hestitate to contact us, we would be more than happy to help!</br></p>
         <br>
+    <div class="div_faq">
         <details>
             <summary>What are the best language resources available online?</summary>
             <div class="faq_text">
@@ -111,6 +114,7 @@
                 in the form of videos and/or vocabulary.
             </div>
         </details>
+        <br>
         <details>
             <summary>How can I get started with learning a new language?</summary>
             <div class="faq_text">
@@ -118,12 +122,14 @@
                 resources available (suitable online resources you can find on our website) and praticing regularly. 
             </div>
         </details>
+        <br>
         <details>
             <summary>What languages do you offer?</summary>
             <div class="faq_text">
                 <br>We offer 7 languages: Chinese, Dutch, English, French, Korean, Swahili and Urdu.
             </div>
         </details>
+        <br>
         <details>
             <summary>What are some common challenges faced by language learners?</summary>
             <div class="faq_text">
@@ -131,6 +137,7 @@
                 understanding grammar rules and maintaining confidence in practicing speaking the language.
             </div>
         </details>
+        <br>
         <details>
             <summary>Is it possible to learn a language without taking formal classes?</summary>
             <div class="faq_text">
@@ -138,6 +145,7 @@
                 and books.
             </div>
         </details>
+        <br>
         <details>
             <summary>What are the benefits of learning a new language?</summary>
             <div class="faq_text">
@@ -147,16 +155,14 @@
         </details>
     </div>
 
-    <br>
+    <br><br>
 
 <!-- Footer -->
     <footer>
-        <p><img src="lang.png" alt=""></p>
         <p><a href="#">Home</a></p>
         <p><a href="#">Languages</a></p>
-        <p><a href="#">Contact us</a></p>
+        <p id="contact">Contact us<br> Email: languageschool@gmail.com <br>Phone number: 44077 54281 55</p>
+        <p>©2024 Learning School All rights reserved</p>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 </html>
