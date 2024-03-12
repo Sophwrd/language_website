@@ -3,7 +3,6 @@
     margin: 0%;
     font-family:url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 }
-
 img{
     width: 100px;
     height: 70px;
@@ -25,18 +24,165 @@ ul li a{
     text-align: center;
     font-size: 20px;
 }
-ul li ul.dropdown {
-    position: absolute;
-    display: none;
-    float: left;
-}
 ul li a:hover{
     background:  rgba(238,174,202,1) 0%;
 }
-ul li:hover ul.dropdown{
-    display: block;
+.form-control{
+    
+    margin-top: 20px;
+   float: right;
+   width: 300px;
+   display: block;
+} 
+.btn {
+    margin-top: 20px;
+    margin-right: 100px;
+    float: right;
+    text-align: center;
+    color: #fff; 
+}
+.container{
+    display:grid ;
+    padding: 0px;
+    padding-top: 1em;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding: 5% 0;
+}
+section div{
+    width: 100%;
+    margin: 0 ;
+}
+section h2{
+    text-align: center;
+}
+.cover-section{
+    margin: 0%;
+    padding: 0%;
+    height: 354px;
+    border-radius: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.8044467787114846) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+    padding-bottom: 30px;
+    padding-left: 0.5em;
+    text-align: center;
+    font-size: 5vw;
+    font-style: italic;
+    
+}
+.text{
+    width: 40%;
+    text-align: center;
+    color: black;
+    margin: auto;
+    padding: 0 20px;
+}
+.text:hover{
+    color: rgb(255, 0, 0);
+   transition: 2s;
+   cursor: pointer;
+}
+.box-image{
+    width: 40%;
+    max-height: 40%;
+}
+.box-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.text{
+    text-align: center;
+}
+.text h2{
+    font-size: 50px;
+    font-style: italic;
+    font-display: bold;
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+    display: inline-block;
+    position: relative;
+}
+.text h2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+  
+}
+.text h2 :hover ::before{
+    width: 100%;
+}
+/* testionials */
+.p_popularlanguages2{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* FAQ */
+.faq{
+    text-align: center;
+}
+.faq_text{
+    display: inline-block;
+    height: 100%;
+    width: 77%;
+    text-align: justify;
+    color: rgb(236, 147, 162);
+}
+
+.div_faq{
+    padding: 5px;
+    overflow: auto;
+    text-align: justify;
+    margin-left: 300px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* images */
+.column{
+    float: left;
+    width: 32.24%;
+    padding: 5px;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+.parent{
+    margin: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+.child{
+    display: inline-block;
+    background-color: pink;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    height: 100%;
+    border-radius: 15px 50px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 /* footer */
 footer{
     background: linear-gradient(90deg, rgb(10, 10, 12) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -65,114 +211,4 @@ h2{
 }
 h3{
     padding: 5px;
-}
-
-/* about us */
-.about_us{
-    padding: 5px;
-    text-align: center;
-}
-.about_us2{
-    text-align: center;
-    background-color: rgba(0, 213, 255, 0.209);
-    border-radius: 15px 15px;
-    padding: 1rem 1rem;
-    height: 100%;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-.about_us3{
-    background-color: rgba(0, 213, 255, 0.209);
-    border-radius: 20%;
-    display: inline-block;
-    padding: 1rem 1rem;
-    height: 100%;
-    border-radius: 15px 15px;
-    text-align: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    transform: translate(-50,-50);
-}
-
-/* most popular languages */
-.p_popularlanguages{
-    color: rgb(79, 79, 232);
-    padding: 5px;
-}
-.p_popularlanguages2{
-    color: rgb(79, 79, 232);
-    text-align: center;
-}
-
-/* testionials */
-.testimonials{
-    text-align: center;
-}
-
-/* FAQ */
-.faq{
-    text-align: center;
-}
-.faq_text{
-    display: inline-block;
-    height: 100%;
-    width: 77%;
-    text-align: justify;
-    color: rgb(79, 79, 232);
-}
-
-.div_faq{
-    padding: 5px;
-    overflow: auto;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-
-/* images */
-.column{
-    float: left;
-    width: 32.24%;
-    padding: 5px;
-}
-.row:after{
-    content: "";
-    clear: both;
-    display: table;
-}
-.row{
-    justify-content: space-between;
-    text-align: center;
-    display: flex;
-}
-
-.parent{
-    margin: 1rem;
-    padding: 1rem 1rem;
-    text-align: center;
-}
-.child{
-    display: inline-block;
-    background-color: pink;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-    height: 100%;
-    border-radius: 15px 50px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-details{
-    padding-left: 220px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.header{
-    padding: 10px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: rgba(0,212,255,1);
 }
